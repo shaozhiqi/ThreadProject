@@ -9,8 +9,9 @@ public MyExecutor(int i){
 }
 public void run(){
     try{
-     System.out.println("["+this.index+"] start....");
-     Thread.sleep((int)(Math.random()*10000));
+     // sleep 毫秒
+     double sleepTime = Math.random() * 10000;
+     System.out.println("[" + this.index + "] start....sleep.."+(int)sleepTime);
      System.out.println("["+this.index+"] end.");
     }
     catch(Exception e){
